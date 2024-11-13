@@ -86,3 +86,9 @@ hive.exec.reducers.bytes.per.reducer=1073741824; // 1gb
 tez.shuffle-vertex-manager.min-src-fraction=0.25;
 tez.shuffle-vertex-manager.max-src-fraction=0.75;
 tez.runtime.pipelined.sorter.lazy-allocate.memory=true;
+
+
+set hive.optimize.ppd=true;  -- Predicate Pushdown
+set hive.optimize.index.filter=true;
+
+
